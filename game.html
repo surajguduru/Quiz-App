@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        
+        <div id="hud">
+            <div id="progressBarFull">
+                <div id="progressBar"></div>
+            </div>
+            <div id="hud-item">
+                <p id="progressText" class="hud-prefix">Question</p>
+                <h1 id="score" class="hud-main-text">Score : 0</h1>
+            </div>
+        </div>
+
+        <h2 id="question">Question Text</h2>
+        <div class="choices">
+            <button class="choice" data-number="1">Choice 1</button>
+            <button class="choice" data-number="2">Choice 2</button>
+            <button class="choice" data-number="3">Choice 3</button>
+            <button class="choice" data-number="4">Choice 4</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

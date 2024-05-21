@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(196, 213, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.start-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1vh;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-height : 80vh;
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#hud-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hud-prefix {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.hud-main-text {
+    font-size: 2em;
+    margin: 0;
+}
+
+#question {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.choice {
+    background-color: #6287ae;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.correct {
+    background-color: #25af45 !important;
+}
+
+.incorrect {
+    background-color: #e90b21 !important;
+}
+
+#progressBarFull {
+    width: 50%;
+    height: 4vh;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#progressBar {
+    height: 4vh;
+    background-color: #007BFF;
+    width: 0;
+    transition: width 0.3s;
+}
+
+#progressBarFull:hover{
+    transform: scale(1.05);
+}
+
+.restart{
+    margin-right: 7vw;
+}
